@@ -1,0 +1,109 @@
+{
+  // ===============================
+  // PYTHON CORE ENGINE (MAX MODE)
+  // ===============================
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.useLibraryCodeForTypes": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.indexing": true,
+  "python.analysis.memory.keepLibraryAst": true,
+
+  // ===============================
+  // ROS 2 PYTHON AUTOCOMPLETE PATHS
+  // ===============================
+  "python.autoComplete.extraPaths": [
+    "/home/luqman/ros2_workspace/install/**/lib/python3.8/site-packages",
+    "/home/luqman/slam_ws/install/**/lib/python3.8/site-packages",
+    "/home/luqman/extra_ros_ws/install/**/lib/python3.8/site-packages",
+
+    "/opt/ros/foxy/lib/python3.8/site-packages",
+
+    "/home/luqman/ros2_workspace/src/**",
+    "/home/luqman/slam_ws/src/**",
+    "/home/luqman/extra_ros_ws/src/**"
+  ],
+
+  "python.analysis.extraPaths": [
+    "/home/luqman/ros2_workspace/install/**/lib/python3.8/site-packages",
+    "/home/luqman/slam_ws/install/**/lib/python3.8/site-packages",
+    "/home/luqman/extra_ros_ws/install/**/lib/python3.8/site-packages",
+
+    "/opt/ros/foxy/lib/python3.8/site-packages",
+
+    "/home/luqman/ros2_workspace/src/**",
+    "/home/luqman/slam_ws/src/**",
+    "/home/luqman/extra_ros_ws/src/**"
+  ],
+
+  // ===============================
+  // ROS ENVIRONMENT BOOSTERS
+  // ===============================
+  "python.envFile": "${workspaceFolder}/.env",
+  "terminal.integrated.env.linux": {
+    "PYTHONPATH": "/opt/ros/foxy/lib/python3.8/site-packages:/home/luqman/ros2_workspace/install:/home/luqman/extra_ros_ws/install"
+  },
+
+  // ===============================
+  // LINTING — MAX BUT SMART
+  // ===============================
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.linting.banditEnabled": true,
+
+  "python.linting.pylintArgs": [
+    "--disable=C0114,C0115,C0116",
+    "--max-line-length=120"
+  ],
+
+  // ===============================
+  // FORMATTING — ULTRA CLEAN
+  // ===============================
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "python.formatting.blackArgs": [
+    "--line-length",
+    "120"
+  ],
+
+  // ===============================
+  // DEBUGGING — MAX POWER
+  // ===============================
+  "python.debugpy.useBundled": true,
+  "python.debugpy.logToFile": false,
+
+  // ===============================
+  // PERFORMANCE — FAST MODE
+  // ===============================
+  "python.analysis.openFilesOnly": false,
+  "python.analysis.diagnosticMode": "workspace",
+  "files.watcherExclude": {
+    "**/build/**": true,
+    "**/install/**": true,
+    "**/log/**": true
+  },
+
+  // ===============================
+  // INTELLISENSE QUALITY BOOST
+  // ===============================
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+
+  // ===============================
+  // ROS DEV QUALITY OF LIFE
+  // ===============================
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+
+  // ===============================
+  // LEGACY SUPPORT (SAFE)
+  // ===============================
+  "python.linting.enabled": false
+}
