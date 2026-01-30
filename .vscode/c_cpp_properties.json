@@ -1,0 +1,102 @@
+{
+  "configurations": [
+    {
+      "name": "ROS_ULTIMATE_MAX",
+
+      "compilerPath": "/usr/bin/g++",
+      "cStandard": "c17",
+      "cppStandard": "c++23",
+      "intelliSenseMode": "linux-gcc-x64",
+
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": false
+      },
+
+      "defines": [
+        "ROS2",
+        "FOXY",
+        "__GNUC__",
+        "__linux__",
+        "DEBUG",
+        "NDEBUG",
+        "_GLIBCXX_USE_CXX11_ABI=1",
+        "EIGEN_NO_DEBUG",
+        "RCLCPP_LOGGING_ENABLED"
+      ],
+
+      "includePath": [
+        "/home/luqman/ros2_workspace/install/**",
+        "/home/luqman/extra_ros_ws/install/**",
+
+        "/home/luqman/ros2_workspace/src/**",
+        "/home/luqman/extra_ros_ws/src/**",
+
+        "/home/luqman/**",
+
+        "/opt/ros/foxy/include/**",
+        "/opt/ros/foxy/include/rclcpp/**",
+        "/opt/ros/foxy/include/rcl/**",
+        "/opt/ros/foxy/include/rmw/**",
+        "/opt/ros/foxy/include/rcutils/**",
+        "/opt/ros/foxy/include/rosidl_runtime_cpp/**",
+        "/opt/ros/foxy/include/rosidl_typesupport_cpp/**",
+        "/opt/ros/foxy/include/geometry_msgs/**",
+        "/opt/ros/foxy/include/sensor_msgs/**",
+        "/opt/ros/foxy/include/nav_msgs/**",
+        "/opt/ros/foxy/include/std_msgs/**",
+
+        "/usr/include/**",
+        "/usr/local/include/**",
+        "/usr/include/x86_64-linux-gnu/**",
+
+        "/usr/include/eigen3/**",
+        "/usr/include/opencv4/**",
+        "/usr/include/boost/**",
+        "/usr/include/pcl-*/**",
+        "/usr/include/vtk-*/**",
+        "/usr/include/assimp/**",
+
+        "/usr/include/python3.*/**",
+        "/usr/include/cuda/**",
+
+        "/usr/include/GL/**",
+        "/usr/include/SDL2/**",
+        "/usr/include/bullet/**",
+
+        "/usr/lib/gcc/**",
+        "/lib/gcc/**"
+      ],
+
+      "compilerArgs": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Wshadow",
+        "-Wconversion",
+        "-Wfloat-equal",
+        "-Wcast-align",
+        "-Wformat=2",
+        "-Winvalid-pch",
+        "-Wnon-virtual-dtor",
+        "-Woverloaded-virtual",
+        "-Wmisleading-indentation",
+
+        "-O3",
+        "-Ofast",
+        "-march=native",
+        "-mtune=native",
+        "-ffast-math",
+        "-funroll-loops",
+
+        "-g",
+        "-ggdb3",
+
+        "-fconcepts",
+        "-fcoroutines",
+        "-fmodules-ts"
+      ]
+    }
+  ],
+  "version": 4
+}
