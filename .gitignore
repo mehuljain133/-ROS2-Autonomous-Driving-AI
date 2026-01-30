@@ -1,0 +1,126 @@
+# ======================================================
+# 🚫 PYTHON CACHE / BYTECODE
+# ======================================================
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+
+
+# ======================================================
+# 🚫 ROS 2 BUILD / INSTALL / LOG
+# ======================================================
+build/
+install/
+log/
+
+
+# ======================================================
+# 🚫 PYTHON VIRTUAL ENVIRONMENTS
+# ======================================================
+.Python
+venv/
+ENV/
+env/
+ROS2SDC_VENV/
+
+
+# ======================================================
+# 🚫 IDE / EDITOR CONFIG
+# ======================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+
+# ======================================================
+# 🚫 DATASETS / TRAINING FILES / LARGE MEDIA
+# ======================================================
+dataset_signs/
+Haar_Cascade_Training/
+
+*.avi
+*.mp4
+*.mov
+*.mkv
+
+
+# ======================================================
+# 🚫 PROJECT-SPECIFIC GENERATED FILES
+# ======================================================
+
+# Prius SDC cache
+prius_sdc/**/__pycache__/
+
+# Self Driving Car Package cache
+self_driving_car_pkg/**/__pycache__/
+
+# Detection cache
+self_driving_car_pkg/**/Detection/**/__pycache__/
+
+
+# ======================================================
+# 🚫 SIGN DETECTION / LOCALIZATION CACHE
+# ======================================================
+self_driving_car_pkg/**/Detection/Signs/**/__pycache__/
+
+
+# ======================================================
+# 🚫 VIDEO TRAINING DATA
+# ======================================================
+self_driving_car_pkg/**/data/vids/
+self_driving_car_pkg/data/vids/
+
+
+# ======================================================
+# 🚫 TRAFFIC LIGHT TRAINING DATA
+# ======================================================
+self_driving_car_pkg/**/Detection/TrafficLights/HaarCascade/Training/vids/
+self_driving_car_pkg/**/Detection/TrafficLights/HaarCascade/Training/Negative/
+self_driving_car_pkg/**/Detection/TrafficLights/HaarCascade/Training/Positive/
+self_driving_car_pkg/**/Detection/TrafficLights/HaarCascade/Training/Augmented_Positives/
+
+
+# ======================================================
+# 🚫 HAAR CASCADE GENERATED XML FILES
+# ======================================================
+self_driving_car_pkg/**/Detection/TrafficLights/HaarCascade/Training/Cascades/*.xml
+
+
+# ======================================================
+# 🚫 MACHINE LEARNING MODEL OUTPUTS
+# ======================================================
+*.h5
+*.onnx
+*.pt
+*.pth
+*.tflite
+*.pb
+
+
+# ======================================================
+# 🚫 DOCKER ARTIFACTS
+# ======================================================
+*.tar
+*.img
+docker-compose.override.yml
+
+
+# ======================================================
+# 🚫 TEMP / CACHE / RUNTIME FILES
+# ======================================================
+*.log
+*.tmp
+*.bak
+*.cache
+
+
+# ======================================================
+# 🚫 SYSTEM / OS TRASH
+# ======================================================
+Thumbs.db
+ehthumbs.db
+desktop.ini
